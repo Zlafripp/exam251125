@@ -30,9 +30,18 @@ header nav a.active {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid div {
+  background: #e4e4e4;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .flexbox {
