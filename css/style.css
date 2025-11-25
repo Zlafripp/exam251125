@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: rgb(170, 146, 117);
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    background: #ddd;
+    padding: 15px;
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 15px;
+    background-color: #818181;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35em;
+}
+
+.flexbox {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background: #eee;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.flexbox div {
+    background: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    background-color: #a0a0a0;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.formulaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+input{
+    background-color: #c5c5c5; 
+    padding: 10px;
+}
+
+article{
+    display: grid;
+    place-items: center; /* Raccourci pour align-items: center; et justify-items: center; */
+    height: 66vh;
+}
+
+button{
+    background-color: #ccc;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+main {
+    padding: 20px;
+
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.lorem{
+    font-size: 10em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+}
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    background-color: #818181;
+}
+}
