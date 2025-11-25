@@ -92,7 +92,7 @@ article{
 }
 
 button{
-    background-color: #ccc;
+    background-color: #cccccc;
     padding: 10px;
     font-weight: bolder;
 }
@@ -103,7 +103,7 @@ main {
 }
 
 footer {
-    background: #333;
+    background: #504e4e;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -117,10 +117,10 @@ footer {
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
-}
+    } 
     .bas{
         width: 92%;
-}
+    }
 
     header nav ul {
         flex-direction: column;
@@ -128,9 +128,9 @@ footer {
     }
 
     header nav a.active {
-    font-weight: bold;
-    border-bottom: 2px solid black;
-    padding: 5px;
-    background-color: #818181;
-}
+        font-weight: bold;
+        border-bottom: 2px solid black;
+        padding: 5px;
+        background-color: #818181;
+    }
 }
